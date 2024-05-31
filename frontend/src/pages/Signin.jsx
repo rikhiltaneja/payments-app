@@ -46,7 +46,7 @@ export const Signin = () => {
                 const id = toast.loading("Signing in!");
                 setTimeout(() => {
                   axios
-                    .post("http://localhost:8080/users/signin", {
+                    .post("https://payments-app-backend.rikhiltaneja.com/users/signin", {
                       username,
                       password,
                     })

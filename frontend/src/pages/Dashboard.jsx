@@ -12,7 +12,7 @@ export const Dashboard = () => {
   const [amount, setAmount] = useState(null);
   useEffect(() => {
     axios
-      .get("http://localhost:8080/bank/balance", {
+      .get("https://payments-app-backend.rikhiltaneja.com/bank/balance", {
         headers: { Authorization: token },
       })
       .then((res) => {

@@ -11,7 +11,7 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/users/search?filter=" + filter, {
+      .get("https://payments-app-backend.rikhiltaneja.com/users/search?filter=" + filter, {
         headers: { Authorization: token },
       })
       .then((response) => {

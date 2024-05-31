@@ -54,7 +54,7 @@ export const SendMoney = () => {
                   setTimeout(() => {
                     axios
                       .post(
-                        "http://localhost:8080/bank/transfer",
+                        "https://payments-app-backend.rikhiltaneja.com/bank/transfer",
                         {
                           to: id,
                           amount,
